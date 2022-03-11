@@ -122,17 +122,19 @@ p {
 /*  global classes */
 
 /* section */
-.section {
+section {
   width: 90vw;
-  margin: 0 auto;
+  margin: 5rem auto;  
   max-width: var(--max-width);
-}
+ }
 
 @media screen and (min-width: 992px) {
   .section {
     width: 95vw;
   }
 }
+
+
 .btn {
   background: var(--clr-primary-5);
   display: inline-block;
@@ -177,6 +179,7 @@ main {
   margin: 2rem 0;
   box-shadow: var(--light-shadow);
   transition: var(--transition);
+ 
 }
 .single-tour:hover {
   box-shadow: var(--dark-shadow);
@@ -225,4 +228,9 @@ main {
   border: 1px solid var(--clr-red-dark);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
+}
+@media screen and (max-width: 480px) {
+ .section{
+   margin:0;
+ }
 }

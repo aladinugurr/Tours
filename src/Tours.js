@@ -8,7 +8,6 @@ function Tours({tours,removeTour}) {
       <div className='title'>
       <h2>Our Tours</h2>
       <div className='underline'></div>
-
       </div>
       <div>
       {tours.map((tour) => {

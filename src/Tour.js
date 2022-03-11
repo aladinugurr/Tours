@@ -1,12 +1,9 @@
 import {React,useState} from 'react'
-import Tours from './Tours';
+
 
 function Tour({id,image,info,name,price,removeTour}) {
-    const [readMore,setReadmore] = useState(false);
-    
+    const [readMore,setReadMore] = useState(false);
 
-    
-   
   return (
     <article className='single-tour'>
         <img src={image} alt={name} />
@@ -16,8 +13,10 @@ function Tour({id,image,info,name,price,removeTour}) {
                <h4 className='tour-price'>${price}</h4>
             </div>
             <p>
-            {readMore ? info : `${info.substring(0,200)}...`}
-            <button onClick={()=>setReadmore=(!readMore)}>
+
+            {readMore ? info : `${info.substring(0, 200)}...`}
+            <button onClick={()=>setReadMore(!readMore)}>
+
              {readMore ? 'show less' : 'read more'}
             </button>
             </p>
